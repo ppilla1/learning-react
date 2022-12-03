@@ -3,7 +3,7 @@ import '../style/Maincontent.css';
 function Maincontent() {
 
     return (
-        <>
+        <div className="mainctn">
             <h2 className="mainctn__header">My awesome website in React</h2>
             <h3 className="mainctn__desc">Reasons I <span id="heart">{'\u2665'}</span> React</h3>
             <ul className="mainctn__list">
@@ -30,7 +30,7 @@ function Maincontent() {
                     <label for="reason_3" className="mainctn__accord__lbl">Hireable</label>
                     <div className="mainctn__dtl">
                         <p>
-                            It's hireable skill
+                            I'm more likely to get a job as a developer if I know React
                         </p>
                     </div>
                 </li>
@@ -39,12 +39,12 @@ function Maincontent() {
                     <label for="reason_4" className="mainctn__accord__lbl">Maintained</label>
                     <div className="mainctn__dtl">
                         <p>
-                            It's actively maintained by skilled people
+                            It's actively maintained by skilled people. It's a popular library, so I'll be able to fit in with cool kid's!
                         </p>
                     </div>
                 </li>
             </ul>
-        </>
+        </div>
     )
 }
 

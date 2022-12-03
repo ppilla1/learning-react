@@ -1,0 +1,34 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar__content {
+    list-style: none;
+    display: flex;
+}
+
+.navbar__content > li{
+    padding: 1.8em;
+}
+
+.navbar__logo {
+    width: 8.0em;
+    pointer-events: none;
+  }
+  
+  @media (prefers-reduced-motion: no-preference) {
+    .navbar__logo {
+      animation: navbar-logo-spin infinite 20s linear;
+    }
+  }
+  
+  @keyframes navbar-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
