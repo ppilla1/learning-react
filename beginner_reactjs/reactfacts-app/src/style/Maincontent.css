@@ -1,0 +1,67 @@
+#heart {
+    font-size: 3.0rem;
+    color: red;
+}
+
+.mainctn__list {
+    padding: 0;
+    list-style: none;
+    max-width: 400px;
+    box-shadow: 0 0 10px rgba(0, 0, 0.2);
+    border-radius: 5px;
+    overflow: hidden;
+    font-family: 'Quicksand', sans-serif;
+    background: #61DAFB;
+}
+
+.mainctn__accord__lbl{
+    display: block;
+    color: #ffffff;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+    transition: background 0.1s;
+    text-align: center;
+}
+
+.mainctn__accord__lbl:hover{
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.mainctn__accord__lbl::before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 20px;
+    width: 12px;
+    height: 6px;
+    background-image: url('../resources/arrow.svg');
+    background-size: contain;
+    transition: transform 0.4s;
+}
+
+
+.mainctn__accord__lbl,
+.mainctn__dtl {
+    padding: 14px 20px;
+}
+
+.mainctn__dtl {
+    background-color: white;
+    line-height: 1.6em;
+    font-size: 0.85em;
+    display: none;
+}
+
+.mainctn__accord__in {
+    display: none;
+}
+
+.mainctn__accord__in:checked ~ .mainctn__dtl{
+    display: block;
+}
+
+.mainctn__accord__in:checked ~ .mainctn__accord__lbl::after {
+    transform: translateY(-50%) rotate(0.5turn);
+}

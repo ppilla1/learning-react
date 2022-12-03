@@ -4,14 +4,46 @@ function Maincontent() {
 
     return (
         <>
-            <h2 className="mainctn--header">My awesome website in React</h2>
-            <h3 className="mainctn-desc">Reasons I (U+2665) React</h3>
-            <ol className="mainctn-list">
-                <li>It's composable</li>
-                <li>It's declarative</li>
-                <li>It's hireable skill</li>
-                <li>It's actively maintained by skilled people</li>
-            </ol>
+            <h2 className="mainctn__header">My awesome website in React</h2>
+            <h3 className="mainctn__desc">Reasons I <span id="heart">{'\u2665'}</span> React</h3>
+            <ul className="mainctn__list">
+                <li>
+                    <input type="checkbox" className="mainctn__accord__in" name="reactlike_reason" id="reason_1"></input>
+                    <label for="reason_1" className="mainctn__accord__lbl">Composable</label>
+                    <div className="mainctn__dtl">
+                        <p>
+                            It's composable
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <input type="checkbox" className="mainctn__accord__in" name="reactlike_reason" id="reason_2"></input>
+                    <label for="reason_2" className="mainctn__accord__lbl">Declarative</label>
+                    <div className="mainctn__dtl">
+                        <p>
+                            It's declarative
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <input type="checkbox" className="mainctn__accord__in" name="reactlike_reason" id="reason_3"></input>
+                    <label for="reason_3" className="mainctn__accord__lbl">Hireable</label>
+                    <div className="mainctn__dtl">
+                        <p>
+                            It's hireable skill
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <input type="checkbox" className="mainctn__accord__in" name="reactlike_reason" id="reason_4"></input>
+                    <label for="reason_4" className="mainctn__accord__lbl">Maintained</label>
+                    <div className="mainctn__dtl">
+                        <p>
+                            It's actively maintained by skilled people
+                        </p>
+                    </div>
+                </li>
+            </ul>
         </>
     )
 }
